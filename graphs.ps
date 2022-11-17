@@ -1,0 +1,42 @@
+import chart.js 
+const labels = Utils.subjects({count: 4}) #Labels x axis with the subjects, Y with the grades
+ average_maths = average(maths)
+ average_further = average(further_maths)
+ average_physics = average(physics)
+ average_computerscience = average(computer_science)
+ 
+ const data = { 
+    labels: labelsdatgasets: [{
+        label: 'Subject Performance' 
+        data: [average_maths, average_further, average_physics_average_computerscience]
+        #THESE COLOURS ARE SUBJECTED TO CHANGE IN THE REAL CODE
+        backgroundColor: [
+      'rgba(255, 99, 132, 0.2)',
+      'rgba(255, 159, 64, 0.2)',
+      'rgba(255, 205, 86, 0.2)',
+      'rgba(75, 192, 192, 0.2)',
+      'rgba(54, 162, 235, 0.2)',
+      'rgba(153, 102, 255, 0.2)',
+      'rgba(201, 203, 207, 0.2)'
+    ],
+    borderColor: [
+      'rgb(255, 99, 132)',
+      'rgb(255, 159, 64)',
+      'rgb(255, 205, 86)',
+      'rgb(75, 192, 192)',
+      'rgb(54, 162, 235)',
+      'rgb(153, 102, 255)',
+      'rgb(201, 203, 207)'  
+    ],
+    borderWidth: 1
+  }]
+};
+    }]
+ }
+ const config {
+    type = 'bar', 
+    data: data
+    options;
+    scales; 
+ }
+ export config 

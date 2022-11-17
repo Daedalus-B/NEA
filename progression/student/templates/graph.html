@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Student Progression</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1> {{first_name}} </h1> 
+	<h4> Math average </h2>
+        {%if avofmaths == "No Data"%}
+           <p> Current hold no data </p>
+        {%else%}
+          {{avofmaths}}
+          {%if avofmaths > 79%}
+            <p> You are at A* </p>
+          {%else%}
+          <p> You are less than A* </p> 
+          {%endif%}
+        {%endif%}
+      <h4> Physics Average </h2> 
+        {%if avofphysics == "No Data"%}
+        <p> Current hold no data </p>
+        {%else%}
+          {{avofphysics}}
+          {%if avofphysics > 79%}
+            <p> You are at A* </p>
+          {%else%}
+          <p> You are less than  A* </p> 
+          {%endif%}
+       {%endif%} 
+  </body>
+</html>

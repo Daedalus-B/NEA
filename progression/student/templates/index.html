@@ -1,0 +1,33 @@
+{%load static %}
+<!DOCTYPE html> 
+<html>  
+    <head> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title> Home </title> 
+    </head> 
+
+    <body> 
+        <a href = "submit" > 
+        <button> Submit Topic </button> 
+        </a>
+        <h4> Graphs </h4>
+        <label for = "Student"> Choose student to see data: </label> 
+            <form action = "" method = "POST" > 
+                {% csrf_token %}
+            <select name = "students"  id = "students">
+                {%for i in  students %}
+                <option value = {{i.student_id}}> {{i.firstname}}</option>
+                {%endfor%}
+                </select>
+             <a href = "graph"> 
+                <button type = "submit"> View student Progression" </button>
+             </a> 
+            </form> 
+
+        <h5> Maths average </h2> 
+        {{maths}}
+    </body>
+
+</html>

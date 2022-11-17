@@ -1,0 +1,46 @@
+public function average(subject): 
+     current_file = open student.csv 
+     subject_row = select subject_row
+     total = 0
+     number_of_topics_submitted = 0
+     for i in subject_row():
+           total = i + total
+           numher_of_topics_submitted += 1
+    average = total/number_of_topics_submitted 
+
+    return average 
+
+public function status():
+        if student does 4 subjects: 
+        average_maths =  average_maths = average(maths)
+        average_further = average(further_maths)
+        average_physics = average(physics)
+        average_computerscience = average(computer_science)
+        all_average = sum of all/4
+        elif: 
+           average_maths =  average_maths = average(maths)
+           average_further = average(further_maths)
+           average_physics = average(physics)
+           all_average = sum of all/3
+        elif: 
+            average_maths =  average_maths = average(maths)
+            average_further = average(further_maths)
+             average_computerscience = average(computerscience)
+             all_average = sum of all/3
+        elif: 
+            average_physics = average(physics)
+            average_computerscience = average(computer_science)
+            average_maths =  average_maths = average(maths)
+            all_average = sum of all/3
+    if all_averege > 80:
+        return "Excellent"
+    elif 70<all_average<80:
+        return "Good"
+    elif all_average == student_target: 
+        return "You are on your goal"
+    elif 50 < all_average < student_target: #Assuming student target grade is above 50%
+         return "Below expectation"
+   elif all_average < 50: 
+       return "Needs Improvement"
+           
+           

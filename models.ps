@@ -1,0 +1,57 @@
+import django models
+
+class Students(models): 
+       firstname = charfield()
+       secondname = charfield()
+       username = charfield()
+       password = charfield()
+       Year = IntegerField()
+       subject_1 = select from Subject class
+       subject_2 = select from Subject class
+       subject_3 = select from Subject class
+       subject_4 = select from Subject class
+
+class Subject(models):
+      name = name of subject
+      Mark_for_A* = percentage out of 100
+      Mark_for_A = percentage out of 100
+      Mark_for_B = percentage out of 100
+      Mark_for_C = percentage out of 100
+      Mark_for_D = percentage out of 100
+      Mark_for_E = percentage out of 100
+      Mark_for_F = percentage out of 100
+
+      class Meta:
+         Mark_DB_table = "Grade_boundaries"
+    
+class Topic(models): 
+   subject = select from Subject class 
+   student = select from  Student 
+   name_of_topic = CharField()
+   exam_grade = percentage out of 100
+   confidence_level = integer out of 10
+   knowledge_level = integer out of 10
+   feedback_from_teacher = CharField()
+
+class Target_Grade(models)
+       grades = {
+        "A*, "A", "B", "C", "D", "E", "F"
+       }
+       student = select from Student class
+       subject = select from Subject 
+       personal_grade = select from grades
+       target_grade = select from grades 
+
+class weekly(models): 
+     student = select from student 
+     consistency = integer out of 10
+     deadlines = integer out of 10
+     completed_all_personal_task = 'Yes' or 'No'
+     independent_study = integer out of 10
+     motivation = integer out of 10
+     meeting_goals = integer out of 10       
+
+
+
+
+      
